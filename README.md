@@ -42,6 +42,7 @@ Prepare some unit tests below:
 Because all data on a smart contract is public and transparent, nonceNumHash guarantees the privacy of nonce and Number.
         
 **Question 3**: Security loopholes 
+ 
  **Answer**: The biggest flaw in this game is that the host can cheat, because the nonce and number are transparent to the host.
  **Solution**: 
  
