@@ -5,9 +5,13 @@ This is a guessing number game contract with solidity. Game play：There are two
 
 The number of players can be arbitrarily specified by the host.
 
+See code implementation details：GuessNumber.sol
+
 The deployed Rinkby network contract address：0x982686E110971c37aB262308bc9DdB73ec209D7e
 
 ## Unit
+See code implementation details：Guess.test.js
+
 Prepare some unit tests below:
 
     ✔ Case 1: Two players guess number and only one wins (54ms)
@@ -25,3 +29,19 @@ Prepare some unit tests below:
     ✔ Case 7: Four players guess number and only one wins  (62ms)
     
     ✔ Case 8: Four players guess number, and there are two winners  (61ms)
+
+## Additional Tasks
+
+### Q1  Customized Player Numbers: Allow the Host to specify the number of Players upon deployment.
+        See code implementation details：GuessNumber.sol
+        
+### Q2  Explain the reason of having both nonceHash and nonceNumHash in the smart contract. Can any of these two be omitted and why?
+        NonceHash can be removed without impact to program logic, but nonceNumHash cannot be removed. Because all data on a smart contract is public and transparent, nonceNumHash guarantees the privacy of nonce and Number.
+        
+### Q3 security loopholes 
+ 
+        
+
+
+
+
