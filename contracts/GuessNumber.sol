@@ -68,6 +68,8 @@ contract GuessNumber {
             "invalid number"
         );
         
+        gameOver = true;
+        
         if (_number >= 0 && _number < 1000) {
             // calculate the winner list
             address[] memory winnerList = _getWinners(_number);
@@ -86,7 +88,7 @@ contract GuessNumber {
                 emit Reward(playAddress[p], reward);
             }
         }
-        gameOver = true;
+        
     }
 
     function _getWinners(uint16 _number)
