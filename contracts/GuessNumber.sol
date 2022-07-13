@@ -6,8 +6,8 @@ import "hardhat/console.sol";
 contract GuessNumber {
     address public chairperson;
     uint16 count; // Number of players
-    uint256 stake;
     bool gameOver; // game over flag
+    uint256 stake;
     bytes32 nonceHash;
     bytes32 nonceNumHash;
     struct Player {
