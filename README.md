@@ -34,11 +34,11 @@ Prepare some unit tests below:
 
 **Question 1**:  Customized Player Numbers: Allow the Host to specify the number of Players upon deployment.
 
-**Answer**:See code implementation details：GuessNumber.sol
+**Answer**: See code implementation details：GuessNumber.sol
         
 **Question 2**:   Explain the reason of having both nonceHash and nonceNumHash in the smart contract. Can any of these two be omitted and why?
         
-**Answer**:NonceHash can be removed without impact to program logic, but nonceNumHash cannot be removed. 
+**Answer**: NonceHash can be removed without impact to program logic, but nonceNumHash cannot be removed. 
 Because all data on a smart contract is public and transparent, nonceNumHash guarantees the privacy of nonce and Number.
         
 **Question 3**:  security loopholes 
