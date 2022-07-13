@@ -1,11 +1,9 @@
 # guess-number-game
 
 ## Introduction
-This is a guessing number game contract with solidity. Game play：There are two roles in this smart contract. The
-“Host” and “Players”. The Host will put a commitment of a secret number in the smart
-contract and also deposit some rewards. The Players can try to guess what the secret
-number is. The player who has the closest guessing to the actual number value will win
-the game. The number of players can be arbitrarily specified by the host.
+This is a guessing number game contract with solidity. Game play：There are two roles in this smart contract. The “Host” and “Players”. The Host will put a commitment of a secret number in the smart contract and also deposit some rewards. The Players can try to guess what the secret number is. The player who has the closest guessing to the actual number value will win the game.
+
+The number of players can be arbitrarily specified by the host.
 
 The deployed Rinkby network contract address：0x982686E110971c37aB262308bc9DdB73ec209D7e
 
