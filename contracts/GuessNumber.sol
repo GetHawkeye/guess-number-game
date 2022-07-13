@@ -51,14 +51,14 @@ contract GuessNumber {
     function guess(uint16 _number) external payable isOver {
         // check rules
         require(_number >= 0 && _number < 1000, "invalid number");
-        require(!players[tx.origin].guessed, "already Guess");
+        require(!players[msg.sender].guessed, "already Guess");
         require(!guessedNum[_number], "number has been guessed");
         require(stake == msg.value, "stake not same value as the Host");
-        players[tx.origin].guessed = true;
-        players[tx.origin].number = _number;
+        players[msg.sender].guessed = true;
+        players[msg.sender].number = _number;
         guessedNum[_number] = true;
-        playAddress.push(tx.origin);
-        emit Guess(tx.origin, _number);
+        playAddress.push(msg.sender);
+        emit Guess(msg.sender, _number);
     }
 
     function reveal(bytes32 _nonce, uint16 _number) external isOver onlyOwner isGuessCompleted {
