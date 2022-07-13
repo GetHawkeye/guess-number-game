@@ -57,9 +57,10 @@ Because all data on a smart contract is public and transparent, nonceNumHash gua
  > **Solution**: 
  
  > The business logic in the Reveal method can be split into two separate methods:
-> 1） Reveal the winning list function
+ 
+> 1） Reveal the winning list function, Only the host can reveal the winners.
 
-> 2） the winners take the initiative to claim the prize function
+> 2） Claim the prize function, only the winner can claim.
 
 
 
